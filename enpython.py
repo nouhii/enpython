@@ -6,8 +6,7 @@
 # EnPython: Basic feature expansion module.
 # Simplifies stuff like sorting algorithms, etc...
 #
-# Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License
-# https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+# Creative Commons Zero v1.0 Universal
 # -----------------------------------------------------------------------------
 
 # -------------------
