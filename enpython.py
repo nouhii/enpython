@@ -15,8 +15,38 @@
 import secrets
 import string
 
+
+# -------
+# General
+# -------
+
+# Prints all Commands
+def help(page):
+    if page == 1 or page == 0:
+        print("EnPython Version 0.1 | Commands")
+        print("-[ Page 1]------------------------------------------------------")
+        print("verify_list(list): Verifies if passed variable is a list.")
+        print("bubble_sort(list): Sorts the passed list using bubble sort.")
+        print("insertion_sort(list): Sorts the passed list using insertion sort.")
+        print("selection_sort(list): Sorts the passed list using selection sort.")
+        print("merge_sort(list): Sorts the passed list using merge sort.")
+        print("quick_sort(list): Sorts the passed list using quick sort.")
+        print("-----------------------------------------------------------------")
+    elif page == 2:
+        print("EnPython Version 0.1 | Commands")
+        print("-[ Page 2]------------------------------------------------------")
+        print("int_to_roman(number): Converts integer number to roman numerals.")
+        print("celsius_to_fahrenheit(celsius): Converts celsius to fahrenheit.")
+        print("fahrenheit_to_celsius(fahrenheit_to_celsius): Converts fahrenheit to celsius.")
+        print("celsius_to_kelvin(celsius): Converts celsius to kelvin.")
+        print("kelvin_to_celsius(kelvin): Converts kelvin to celsius.")
+        print("generate_password(length, include_uppercase, include_numbers,"
+              "include_symbols): Generates a password using the passed modifiers.")
+        print("-----------------------------------------------------------------")
+
+
 # -------------------
-# Sorting Algorithsms
+# Sorting Algorithms
 # -------------------
 
 # Verify that passed Variable is a list
@@ -65,7 +95,7 @@ def selection_sort(array):
 
     for i in range(len(array)):
         j = i
-        for k in range(i+1, len(array)):
+        for k in range(i + 1, len(array)):
             if array[j] > array[k]:
                 j = k
 
@@ -167,12 +197,12 @@ def int_to_roman(integer_input):
 
 # Convert Celsius to Fahrenheit
 def celsius_to_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+    return (celsius * 9 / 5) + 32
 
 
 # Convert Fahrenheit to Celsius
 def fahrenheit_to_celsius(fahrenheit):
-    return 5/9 * (fahrenheit - 32)
+    return 5 / 9 * (fahrenheit - 32)
 
 
 # Convert Celsius to Kelvin
