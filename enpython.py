@@ -9,6 +9,12 @@
 # Creative Commons Zero v1.0 Universal
 # -----------------------------------------------------------------------------
 
+# -------
+# Imports
+# -------
+import secrets
+import string
+
 # -------------------
 # Sorting Algorithsms
 # -------------------
@@ -177,3 +183,23 @@ def celsius_to_kelvin(celsius):
 # Convert Kelvin to Celsius
 def kelvin_to_celsius(kelvin):
     return kelvin - 273.15
+
+
+# --------
+# Security
+# --------
+
+# Generates a password with customizable modifiers
+def generate_password(length, include_uppercase, include_numbers, include_symbols):
+    modifiers = string.ascii_lowercase
+
+    if include_uppercase:
+        modifiers += string.ascii_uppercase
+    if include_numbers:
+        modifiers += string.digits
+    if include_symbols:
+        modifiers += string.punctuation
+
+    password = "".join(secrets.choice(modifiers) for i in range(length))
+
+    return password
