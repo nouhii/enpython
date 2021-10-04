@@ -129,11 +129,8 @@ def quick_sort(array):
 
         if low < high:
             p = partition(array, low, high)
-
             actual_sort(array, low, p - 1)
             actual_sort(array, p + 1, high)
 
-        return array
-
     actual_sort(array, 0, len(array) - 1)
-
+    return array
