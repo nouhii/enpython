@@ -134,3 +134,46 @@ def quick_sort(array):
 
     actual_sort(array, 0, len(array) - 1)
     return array
+
+
+# ----------
+# Converters
+# ----------
+
+# Converts Integer to Roman Numeral
+def int_to_roman(integer_input):
+    roman_numerals = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
+    regular_nummers = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+    converted_string = ""
+    i = len(regular_nummers) - 1
+    while integer_input != 0:
+        if regular_nummers[i] <= integer_input:
+            converted_string += roman_numerals[i]
+            integer_input -= regular_nummers[i]
+        else:
+            i -= 1
+    return converted_string
+
+
+# ------------
+# Temperatures
+# ------------
+
+# Convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+
+# Convert Fahrenheit to Celsius
+def fahrenheit_to_celsius(fahrenheit):
+    return 5/9 * (fahrenheit - 32)
+
+
+# Convert Celsius to Kelvin
+def celsius_to_kelvin(celsius):
+    return celsius + 273.15
+
+
+# Convert Kelvin to Celsius
+def kelvin_to_celsius(kelvin):
+    return kelvin - 273.15
