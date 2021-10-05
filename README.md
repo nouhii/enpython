@@ -1,5 +1,5 @@
-# enpython
-A module that extends Python by adding things like sorting algortihms, etc.
+# EnPython
+A module that extends Python by adding things like sorting algortihms, converters, etc.
 
 # How to use
 Move the downloaded file to the same directory your python program is in. Then, in your program, add "import enpython" at the top.
